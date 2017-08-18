@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="css/index.css">
+</head>
+
+<body>
+    <div class="content">
+        <div class="header">
+            <ul>
+                <li class="active"><a href="#" class="c-btn c-btn--border-line">自我介绍</a></li>
+                <li><a href="#" class="c-btn c-btn--border-line">项目展示</a></li>
+                <li><a href="#" class="c-btn c-btn--border-line">联系我</a></li>
+            </ul>
+        </div>
+        <div class="introduce">
+            <div class="intro-text"></div>
+            <div class="intro-img">
+                <img src="images/head.jpg">
+            </div>
+        </div>
+    </div>
+    <canvas id="canvas_bg"></canvas>
+    <script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
+    <script type="text/javascript" src="js/test_canvas.js"></script>
+    <script type="text/javascript">
+    $(function() {
+
+        canvasBg("canvas_bg");
+    })
+    </script>
+</body>
+
+</html>
