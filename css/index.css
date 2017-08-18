@@ -32,18 +32,24 @@ body {
     position: relative;
     margin: 0 auto;
     z-index: 1;
-    background-color: rgba(255, 255, 255, 0.7);
+    background-color: rgba(255, 255, 255, 0.8);
+    padding-top: 58px;
 }
 
 
 /* 导航 */
 
 .header {
-    width: 100%;
+    width: 80%;
+    min-width: 960px;
+    max-width: 1024px;
     background-color: rgba(255, 255, 255, 0.9);
     border-bottom: 2px solid #3396e3;
     font-size: 20px;
     box-shadow: 0px 2px 12px #ccc;
+    position: fixed;
+    top: 0;
+    z-index: 99
 }
 
 .header ul {
@@ -141,12 +147,9 @@ body {
     padding: 50px 30px;
     border-bottom: 1px solid #ccc;
     box-shadow: 0px 2px 12px #ececec;
-    background-color: rgba(255, 255, 255, 0.4);
+    /* background-color: rgba(255, 255, 255, 0.4); */
+    background-color: rgba(170, 170, 170, 0.4);
     display: flex;
-}
-
-.intro-text {
-    flex: 3
 }
 
 .intro-img {
@@ -157,4 +160,52 @@ body {
     width: 100%;
     border-radius: 50%;
     box-shadow: 0px 0px 20px #aaa;
+}
+
+.intro-text {
+    flex: 3;
+    text-align: right;
+    padding: 0 6%;
+    color: #222;
+}
+
+.star-bright {
+    margin-top: 40px;
+    margin-bottom: 30px;
+    padding: 0;
+    max-width: 512px;
+    border: 0;
+    /* border-top: 5px solid #bfbfbf; */
+    border-top: 5px solid #888;
+    display: inline-block;
+    width: 100%;
+}
+
+.items {
+    padding: 40px 0;
+    text-align: center;
+}
+
+.items h3 {
+    color: #888;
+    font-weight: bold;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 30px;
+}
+
+.items ul {
+    width: 90%;
+    margin: 20px auto 0;
+    overflow: hidden;
+}
+
+.items ul li {
+    width: 48%;
+    margin: 1% 1% 2% 1%;
+    float: left;
+}
+
+.items ul li img {
+    width: 100%;
 }
