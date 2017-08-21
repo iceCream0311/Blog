@@ -181,12 +181,16 @@ body {
     width: 100%;
 }
 
-.items {
+.items,
+.contact_me {
     padding: 40px 0;
     text-align: center;
+    border-bottom: 1px solid #ccc;
+    box-shadow: 0px 2px 12px #ececec
 }
 
-.items h3 {
+.items h3,
+.contact_me h3 {
     color: #888;
     font-weight: bold;
     text-align: center;
@@ -208,4 +212,20 @@ body {
 
 .items ul li img {
     width: 100%;
+}
+
+.contact_me-email,
+.contact_me-emaila {
+    color: #333;
+    font-size: 18px;
+    padding-bottom: 60px;
+}
+
+.contact_me-email a:hover {
+    color: #3396e3;
+    text-decoration: underline;
+}
+
+.contact_me {
+    background: url(../images/contact.png) bottom right no-repeat
 }
