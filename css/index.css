@@ -27,7 +27,7 @@ body {
 
 .content {
     width: 80%;
-    min-width: 960px;
+    min-width: 720px;
     max-width: 1024px;
     position: relative;
     margin: 0 auto;
@@ -41,7 +41,7 @@ body {
 
 .header {
     width: 80%;
-    min-width: 960px;
+    min-width: 720px;
     max-width: 1024px;
     background-color: rgba(255, 255, 255, 0.9);
     border-bottom: 2px solid #3396e3;
@@ -206,12 +206,89 @@ body {
 
 .items ul li {
     width: 48%;
-    margin: 1% 1% 2% 1%;
+    margin: 2% 1% 2% 1%;
     float: left;
+    position: relative;
 }
 
 .items ul li img {
     width: 100%;
+}
+
+.items li a {
+    width: 100%;
+    display: inline-block;
+}
+
+figcaption {
+    position: absolute;
+    width: 80%;
+    height: 80%;
+    padding: 10%;
+    text-align: left;
+    top: 0;
+    left: 0;
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.2)
+}
+
+.items li h4 {
+    font-size: 18px;
+    line-height: 30px;
+}
+
+.items li:hover figcaption {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+figcaption div {
+    width: 92%;
+    color: #666;
+    margin-top: 2rem;
+    font-size: 16px;
+    line-height: 2rem;
+    position: relative;
+    z-index: 2;
+    opacity: 0;
+    padding-left: 4%;
+}
+
+figcaption div h5 {
+    font-size: 18px;
+    font-weight: 400
+}
+
+
+/* 动画 */
+
+.items li:hover h4 {
+    border-bottom-color: transparent;
+}
+
+.items li:hover figcaption div {
+    opacity: 1
+}
+
+.items li:hover figcaption:before {
+    -webkit-transform: translate3d(0, 6rem, 0) scale3d(1, 1, 1);
+    transform: translate3d(0, 6rem, 0) scale3d(1, 1, 1);
+    opacity: 0.8
+}
+
+figcaption::before {
+    position: absolute;
+    top: 0;
+    right: 10%;
+    left: 10%;
+    height: 6rem;
+    background: #fff;
+    content: '';
+    -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+    transition: opacity 0.35s, transform 0.35s;
+    -webkit-transform: translate3d(0, 4em, 0) scale3d(1, 0.023, 1);
+    transform: translate3d(0, 4em, 0) scale3d(1, 0.023, 1);
+    -webkit-transform-origin: 50% 0;
+    transform-origin: 50% 0;
 }
 
 .contact_me-email,
